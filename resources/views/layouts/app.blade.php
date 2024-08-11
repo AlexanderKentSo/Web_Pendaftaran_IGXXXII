@@ -73,14 +73,25 @@
         .nav-link,
         .nav-link:focus {
             font-family: 'Montserrat Bold';
-            color: #2c56a7;
-            border-radius: 5px;
+            font-size: 20px;
+            color: #ffffff;
         }
 
         .nav-link:hover {
-            color: #ffff;
-            background-color: #2c56a7;
-            border-radius: 5px;
+            color: #ffe2b4;
+        }
+
+        .nav-link::after{
+            content:'';
+            display:block;
+            padding-bottom: 0.2rem;
+            border-bottom: 0.15rem solid #ffe2b4;
+            transform: scaleX(0);
+            transition: 200ms;
+        }
+
+        .nav-link:hover::after{
+            transform: scaleX(0.5);
         }
 
         #navRegister {
@@ -110,19 +121,19 @@
 
 <body>
     {{-- NavBar --}}
-    <nav class="navbar navbar-expand-lg" style="background-color: #ffff; box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);">
+    <nav class="navbar navbar-expand-lg" style="background-color: #D2AF3A; box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);">
         <div class="container-fluid gap-5">
             {{-- Logo IG --}}
-            <a class="navbar-brand" href="#">
-                <img src="{{ asset('assets') }}/logo/Logo Besar_Home.png" alt="Logo IGXXX" style="max-height: 40px">
+            <a class="navbar-brand" href="#" style="padding:0 50px">
+                <img src="{{ asset('assets') }}/logo/Logo_IG32.png" alt="Logo IGXXX" style="max-height: 75px">
             </a>
 
             {{-- Menus --}}
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5" style="text-align:center;">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ route('home') }}">HOME</a>
-                    </li>
+                    </li> 
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ route('whatsig') }}">WHAT'S IG31?</a>
                     </li>
@@ -140,8 +151,7 @@
 
                 {{-- Buttons --}}
                 <form class="d-flex gap-4" role="search" style="font-family: 'Montserrat Bold';">
-                    <a class="btn btn-outline rounded-pill" id="navRegister" href="{{ route('register') }}">REGISTER
-                        NOW</a>
+                    <a class="btn btn-outline" id="navRegister" href="{{ route('register') }}" style="background:#76453B;border-radius:10px;margin:0 20px;">REGISTER NOW</a>
                 </form>
             </div>
         </div>

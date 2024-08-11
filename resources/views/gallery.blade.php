@@ -82,7 +82,7 @@
                     <div class="carousel-item">
                         <div class="container-img">
                             <img src="{{ asset('assets/img/Images_Gallery/img' . ($i + 1) . '.jpg') }}"
-                                class="d-block w-100" alt="image {{ $i + 1 }}">
+                                class="d-block w-100" alt="image {{ $i + 1 }}.JPG">
                         </div>
                     </div>
                 @endif

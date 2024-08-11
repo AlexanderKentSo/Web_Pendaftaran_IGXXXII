@@ -192,21 +192,16 @@
 @endsection
 
 @section('content')
-<div class="container ">
-    <div class="row-full">
-    <div class="spacer"></div>
     {{-- Logo IG --}}
     <div class="row my-5">
         <div class="col-12 mt-3 d-flex flex-wrap justify-content-center">
-            <img class="fix-image headline" src="{{ asset('assets') }}/logo/Logo Besar_Home.png"
+            <img class="fix-image headline" src="{{ asset('assets') }}/logo/Logo_IG32.png"
                 style="max-height: 600px;">
         </div>
     </div>
     {{-- End Of Logo IG --}}
-
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
+<div class="container">
+    <div class="row-full">
 
     {{-- Prize dan Maskot --}}
     <div class="row my-10 mx-0" >
