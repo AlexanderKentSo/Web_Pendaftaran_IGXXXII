@@ -121,7 +121,7 @@
 
 <body>
     {{-- NavBar --}}
-    <nav class="navbar navbar-expand-lg" style="background-color: #D2AF3A; box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);">
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3ab4b; box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);">
         <div class="container-fluid gap-5">
             {{-- Logo IG --}}
             <a class="navbar-brand" href="#" style="padding:0 50px">
