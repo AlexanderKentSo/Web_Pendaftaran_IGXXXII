@@ -35,6 +35,10 @@
             src: local('Montserrat'), url('assets/font/Montserrat-Bold.ttf');
         }
 
+        body {
+            background-color: #FFF9E1;
+        }
+
         .footer-container {
             color: #fff;
             background-color: #2c56a7;
