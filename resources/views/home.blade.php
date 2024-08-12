@@ -99,9 +99,9 @@
         }
 
         /* .button-regis:hover {
-                                                                                            background-color: white;
-                                                                                            color: black;
-                                                                                        } */
+                                                                                                                                                    background-color: white;
+                                                                                                                                                    color: black;
+                                                                                                                                                } */
 
         .spacer-2 {
             margin-right: -30px;
@@ -193,8 +193,6 @@
 
 @section('content')
     <div class="container">
-
-
         {{-- Logo IG --}}
         <div class="row my-5">
             <div class="col-12 mt-3 d-flex flex-wrap justify-content-center">
@@ -209,21 +207,25 @@
                 <div class="col-xl-7 col-sm-12 my-4 d-flex flex-column justify-content-start">
                     <div class="d-flex align-items-center">
                         <h3 class="ms-5 text-black">Win a total of</h3>
-                        <div class="d-lg-flex d-none mx-3" style="background-color: black; height: 2.5px; width: 50%;">
+                        <div class="d-lg-flex d-none mx-3 mb-2" style="background-color: black; height: 5px; width: 25%;">
                         </div>
                     </div>
                     <h2 class="ms-5 text-black">IDR 0000 MILLION</h2>
                     <h3 class="ms-5 text-black">Worth of prizes</h3>
-                    <div class="ms-5 mb-2 mt-auto">
-                        <h4 style="color:#fff;">*REGISTER YOUR TEAM NOW AND BE A PART OF</h4>
-                        <h4 style="color:red;">Industrial Games 2024</h4>
+                    <div class="ms-5 mt-auto">
+                        <h4 style="color:#fff;">*REGISTER YOUR TEAM NOW AND</h4>
+                        <div class = "d-flex flex-wrap">
+                            <h4>BE A PART OF &nbsp;</h4>
+                            <h4 class = "ml-1"style="color:#CB553B;">INDUSTRIAL GAMES 2024!!!</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-5 col-sm-12 d-flex justify-content-end align-items-end p-0">
                     <img class="fix-image maskot" src="{{ asset('assets') }}/img/Home/Maskot happy 1.png"
-                        style="max-height: 600px; width: auto;">
+                        style="max-height: 400px; width: auto;">
                 </div>
             </div>
+
 
             {{-- End Of Prize dan Maskot --}}
 
@@ -240,60 +242,13 @@
                         <h1 class="ms-5 text-black">GAMES</h1>
                     </div>
                 </div>
-
-
-
-
-
-
-                {{-- <div class="row-12 d-flex flex-wrap align-items-center justify-content-center">
-                    <div class="row align-items-center">
-                        <div class="col"> <!-- left side -->
-                            <div class="col text-end" style="margin-bottom: 150px;">
-                                <img class="fix-image timeline" src="{{ asset('assets') }}/img/opreg.png"
-                                    style="max-height: 60px; margin-left: 65px;">
-                                <p class="text-black">25 Juni - 28 Agustus 2023</p>
-                            </div>
-                            <div class="col text-end">
-                                <img class="fix-image timeline" src="{{ asset('assets') }}/img/game_semifinal.png"
-                                    style="max-height: 60px; margin-left: 75px;">
-                                <p class="text-black">9 September 2023</p>
-                            </div>
-                            <br><br><br><br>
-                        </div>
-                        <div class="col-lg-2 d-flex justify-content-center"> <!-- center side -->
-                            <img class="fix-image timeline" src="{{ asset('assets') }}/img/tali.png"
-                                style="max-height: 700px; margin-left: 25px;">
-                        </div>
-                        <div class="col text-start"> <!-- right side -->
-                            <div class="col text-start" style="margin-top: 150px; margin-bottom: 150px;">
-                                <img class="fix-image timeline" src="{{ asset('assets') }}/img/opreg.png"
-                                    style="max-height: 60px;">
-                                <p class="text-black">2 September 2023</p>
-                            </div>
-                            <!-- <div class="col text-start" style="margin-bottom: 70px;">
-                                                                        <img class="fix-image timeline" src="{{ asset('assets') }}/img/semifinal.png" style="max-height: 60px;">
-                                                                        <p class="text-black">00 Month 2023</p>
-                                                                    </div> -->
-                            <div class="col text-start">
-                                <img class="fix-image timeline" src="{{ asset('assets') }}/img/final.png"
-                                    style="max-height: 60px;">
-                                <p class="text-black">10 September 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-                {{-- End Of Timeline --}}
-
-                {{-- Info --}}
-                <div class="row">
+                <div class="row-full">
 
                     <div class="col-12 d-flex flex-wrap justify-content-start align-items-center mb-3 mt-5">
                         <h1 class="me-5 text-black">INFO IG 32</h1>
                     </div>
                     <div class="row-12 d-flex flex-wrap p-0"
-                        style = "background-color:#d09962;border-radius:20px 20px 0px 0px;">
+                        style = "background-color:#f0d193;border-radius:20px 20px 0px 0px;">
                         <div class="col-12 col-lg-3 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
                             <div style = "background-color:black;height:200px;">
                                 <p style="color:white;">Placeholder Poster</p>
@@ -301,10 +256,9 @@
                             {{--     <div><img class="fix-image poster" src="{{ asset('assets') }}/img/Poster.png"
                                 style="max-height: 700px;"></div> --}}
                         </div>
-                        <div class="col-12 col-lg-5 mt-5">
+                        {{-- Desktop view --}}
+                        <div class="col-12 col-lg-5 mt-5 d-none d-md-block pb-5">
                             <h2 class="text-black">PENDAFTARAN BATCH 1<br>SUDAH DIBUKA !</h2>
-                            {{-- Button --}}
-
                             <h6 class= "text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum
                                 nemo a repudiandae et magni doloremque error laborum tempora nobis?</h6>
                             <div class = "d-flex justify-content-center justify-content-lg-start">
@@ -312,50 +266,38 @@
                                     onclick="location.href='{{ route('register') }}'">REGISTER NOW</button>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 d-flex justify-content-end align-items-end">
-                            <img class="img-fluid mt-5" src="{{ asset('assets') }}/img/Home/Emote marah 1.png"
-                                alt="">
+                        <div class="col-12 col-lg-4 d-flex justify-content-end align-items-end d-none d-md-flex">
+                            <img class="img-fluid fix-image mt-5 mb-3"
+                                src="{{ asset('assets') }}/img/Home/Emote marah 1.png" alt=""
+                                style = "max-height: 200px;opacity: 0.5;">
                         </div>
+
+
+                        {{-- Mobile view --}}
+                        <div class = "d-md-none">
+                            <div class="col-12 col-lg-5 mt-5">
+                                <h2 class="text-black mx-3">PENDAFTARAN BATCH 1 SUDAH DIBUKA !</h2>
+                                <h6 class= "text-black mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Placeat eum
+                                    nemo a repudiandae et magni doloremque error laborum tempora nobis?</h6>
+                                <div class = "d-flex justify-content-center justify-content-lg-start">
+                                    <button class="button-regis my-2" role="button"
+                                        onclick="location.href='{{ route('register') }}'">REGISTER NOW</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 d-flex justify-content-end align-items-end">
+                                <img class="img-fluid mt-5 mb-3" src="{{ asset('assets') }}/img/Home/Emote marah 1.png"
+                                    alt="" style = "max-height: 200px;opacity: 0.5;">
+                            </div>
+                        </div>
+
 
 
                     </div>
                 </div>
-                {{-- <div class="row">
-            <h3 class="text-thin mt-4">See More Info</h3>
-            <div class="col-md-6">
-                <div class="bg-text">
-                    <h4 class="text-black">Lorem ipsum dolor sit.</h4>
-                        <p class="text-black"><i>00 Month 2022 <span style="color:#D3D3D3; font-weight:100">00:00
-                                    PM</span></i></p>
-                        <p class="text-black mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor
-                            sit amet consectetur, adipisicing elit. Praesentium deserunt quo.</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="bg-text">
-                    <h4 class="text-black">Lorem ipsum dolor sit.</h4>
-                    <p class="text-black"><i>00 Month 2022 <span style="color:#D3D3D3; font-weight:100">00:00
-                                PM</span></i></p>
-                    <p class="text-black mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor
-                        sit amet consectetur, adipisicing elit. Praesentium deserunt quo.</p>
-                </div>
-            </div>
-        </div> --}}
 
-                {{-- <div style="margin-top:3rem; font-family: Montserrat Thin; color: #2c56a7;">
-    @include('layouts.sponsor')
-</div> --}}
-                {{-- <div class="row spacing-bawah sponsor-section">
-    <div class="sponsor-list"></div>
-</div> --}}
-
-                {{-- <div style="height: 500px; width: auto"></div> --}}
-                {{-- hiasan --}}
-                {{-- 
-                <div>
-                    <img class="hiasan" src="{{ asset('assets') }}/img/hiasan-home.png" alt="">
-                </div> --}}
-                <div class = "mt-5 mb-5" style="background-color: red; height:5px; width:100%"></div>
             </div>
         </div>
-    @endsection
+    </div>
+    <div class = "mt-5 mb-5" style="background-color: #CB553B; height:5px; width:100%"></div>
+@endsection
