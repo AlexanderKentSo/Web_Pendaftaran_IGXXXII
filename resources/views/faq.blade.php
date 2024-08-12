@@ -80,7 +80,7 @@
                         <div class="box-pertanyaan-1 w-100"></div>
                         <div class="box-pertanyaan-1-isi pt-2 pb-3 mx-2 px-4">
                             <h1 class="mb-1 monst-bold fs-5 ">Apa itu Industrial Games?</h1>
-                            <p class="monst-medium fs-6">Kompetisi tahunan berskala nasional yang diadakan oleh Program Studi Teknik Industri Universitas Surabaya untuk siswa SMA/SMK/sederajat di seluruh Indonesia.</p>
+                            <p class="monst-medium fs-6">Kompetisi tahunan berskala nasional yang diadakan oleh Program Studi Teknik Industri Universitas Surabaya untuk siswa SMA / SMK / sederajat di seluruh Indonesia.</p>
                         </div>
                     </div>
                     <div class="mt-4">
