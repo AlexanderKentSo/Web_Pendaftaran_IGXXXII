@@ -210,9 +210,9 @@
                         <div class="d-lg-flex d-none mx-3 mb-2" style="background-color: black; height: 5px; width: 25%;">
                         </div>
                     </div>
-                    <h2 class="ms-5 text-black">IDR 0000 MILLION</h2>
-                    <h3 class="ms-5 text-black">Worth of prizes</h3>
-                    <div class="ms-5 mt-auto">
+                    <h2 class="mx-5 text-black">IDR 0000 MILLION</h2>
+                    <h3 class="mx-5 text-black">Worth of prizes</h3>
+                    <div class="mx-5 mt-auto">
                         <h4 style="color:#fff;">*REGISTER YOUR TEAM NOW AND</h4>
                         <div class = "d-flex flex-wrap">
                             <h4>BE A PART OF &nbsp;</h4>
@@ -276,8 +276,8 @@
                         {{-- Mobile view --}}
                         <div class = "d-md-none">
                             <div class="col-12 col-lg-5 mt-5">
-                                <h2 class="text-black mx-3">PENDAFTARAN BATCH 1 SUDAH DIBUKA !</h2>
-                                <h6 class= "text-black mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <h2 class="text-black mx-5">PENDAFTARAN BATCH 1 SUDAH DIBUKA !</h2>
+                                <h6 class= "text-black mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Placeat eum
                                     nemo a repudiandae et magni doloremque error laborum tempora nobis?</h6>
                                 <div class = "d-flex justify-content-center justify-content-lg-start">
