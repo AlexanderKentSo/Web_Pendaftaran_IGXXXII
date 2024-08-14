@@ -12,6 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    {{-- icon --}}
+    <script src="https://unpkg.com/feather-icons"></script>
+
     {{-- CSS Internal --}}
     <style>
         @font-face {
@@ -51,33 +54,10 @@
             /* remove extra space below image */
         }
 
-        ul.pages {
-            list-style: none;
-            padding: 0px;
-        }
-
-        ul.pages li {
-            padding: 5px 0px;
-        }
-
-        ul.pages a {
-            color: rgba(255, 255, 255, 1.00);
-            font-weight: bold;
-            font-size: 20px;
-            text-transform: uppercase;
-            text-decoration: none;
-        }
-
-        ul.pages a:hover {
-            color: rgba(255, 255, 255, 0.80);
-            text-decoration: none;
-        }
-
-
         .nav-link,
         .nav-link:focus {
             font-family: 'Montserrat Bold';
-            font-size: 20px;
+            font-size: 18px;
             color: #ffffff;
         }
 
@@ -99,13 +79,16 @@
         }
 
         #navRegister {
+            font-family: 'Montserrat Bold';
             color: #fff;
-            background-color: #2c56a7;
+            background:#76453B;
+            border-radius:10px;
+            margin:0 20px;
         }
 
         #navRegister:hover {
             box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-            -webkit-transform: scale(1.10);
+            -webkit-transform: scale(1.05);
         }
 
         .sosmed {
@@ -113,8 +96,77 @@
             height: 100%;
             max-height: 50px;
         }
-        @media (max-width: 768px) {
-            .sosmed{
+
+        nav{
+            position:fixed;
+            background-color: #e3ab4b; 
+            width:100%;
+            top:0;
+        }
+
+        #hamburger-menu{
+            display: none;
+        }
+
+        .navbar-extra{
+            visibility: hidden;
+        }
+
+        /* Sidebar hidden by default */
+        .sidebar {
+            background-color: #ffe2b4;
+            padding-top: 10px; /* Adjust padding as necessary */
+        }
+
+        /* Links inside the sidebar */
+        .sidebar a {
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 20px; /* Slightly smaller font size */
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* Change hover color */
+        .sidebar a:hover {
+            color: #76453B;
+        }
+
+        /* Media query to hide navbar items and show the hamburger menu */
+        @media (max-width: 900px) {
+            html {
+                font-size: 80%;
+            }
+
+            .navbar {
+                background: #ffe2b4; /* Ensure navbar background matches */
+            }
+
+            .navbar-nav,
+            #navRegister {
+                display: none !important;
+            }
+
+            #hamburger-menu {
+                display: block !important;
+                color: #D3D3D3;
+                margin: 0 25px;
+            }
+
+            /* Show the sidebar when hamburger menu is clicked */
+            #sidebar {
+                display: block; /* Show sidebar */
+            }
+
+            .sidebar {
+                display: block; /* Make sidebar block when in mobile */
+                width: 100%; /* Full width of the screen */
+            }
+
+            /* Initially hide the sidebar */
+            .sidebar.d-none {
+                display: none; /* Hide the sidebar when not active */
             }
         }
     </style>
@@ -125,41 +177,42 @@
 
 <body>
     {{-- NavBar --}}
-    <nav class="navbar navbar-expand-lg" style="background-color: #e3ab4b; box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);">
-        <div class="container-fluid gap-5">
+    <nav>
+        <div class="container-fluid d-flex align-items-center justify-content-between">
             {{-- Logo IG --}}
-            <a class="navbar-brand" href="#" style="padding:0 50px">
-                <img src="{{ asset('assets') }}/logo/Logo_IG32.png" alt="Logo IGXXX" style="max-height: 75px">
+            <a class="navbar-brand" href="#" style="margin:0 50px;">
+                <img src="{{ asset('assets') }}/logo/Logo_IG32.png" alt="Logo IGXXXII" style="max-height: 75px">
             </a>
 
             {{-- Menus --}}
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5" style="text-align:center;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('home') }}">HOME</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('whatsig') }}">WHAT'S IG31?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="{{ route('announcement') }}">ANNOUNCEMENTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('faq') }}">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('gallery') }}">GALLERY</a>
-                    </li>
-                </ul>
-
-                {{-- Buttons --}}
-                <form class="d-flex gap-4" role="search" style="font-family: 'Montserrat Bold';">
-                    <a class="btn btn-outline" id="navRegister" href="{{ route('register') }}" style="background:#76453B;border-radius:10px;margin:0 20px;">REGISTER NOW</a>
-                </form>
+            <div class="navbar d-flex align-items-center gap-3 d-none d-lg-flex">
+                <a class="nav-link active" aria-current="page" href="{{ route('home') }}">HOME</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('whatsig') }}">WHAT'S IG31?</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('announcement') }}">ANNOUNCEMENTS</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('faq') }}">FAQ</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('gallery') }}">GALLERY</a>
             </div>
+
+            {{-- Buttons --}}
+            <a class="btn btn-outline d-none d-lg-flex" id="navRegister" href="{{ route('register') }}">REGISTER NOW</a>
+
+            {{-- Hamburger Menu --}}
+            <a href="#" id="hamburger-menu" class="d-lg-none">
+                <i data-feather="menu"></i>
+            </a>
         </div>
     </nav>
+
+    {{-- Sidebar --}}
+    <div id="sidebar" class="sidebar d-none">
+        <a class="nav-link active" aria-current="page" href="{{ route('home') }}">HOME</a>
+        <a class="nav-link active" aria-current="page" href="{{ route('whatsig') }}">WHAT'S IG31?</a>
+        <a class="nav-link active" aria-current="page" href="{{ route('announcement') }}">ANNOUNCEMENTS</a>
+        <a class="nav-link active" aria-current="page" href="{{ route('faq') }}">FAQ</a>
+        <a class="nav-link active" aria-current="page" href="{{ route('gallery') }}">GALLERY</a>
+    </div>
+
+
 
     {{-- Body --}}
     <div class="container-fluid p-0">
@@ -306,6 +359,24 @@
     {{-- CDN Bootstrap --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    {{-- feather icon --}}
+    <script>
+        feather.replace();
+    </script>
+
+    {{--SIDE BAR--}}
+    <script>
+        document.getElementById('hamburger-menu').onclick = function () {
+            const sidebar = document.getElementById('sidebar');
+            // Toggle the class to show or hide the sidebar
+            if (sidebar.classList.contains('d-none')) {
+                sidebar.classList.remove('d-none');
+            } else {
+                sidebar.classList.add('d-none');
+            }
+        };
     </script>
 </body>
 
