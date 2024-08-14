@@ -28,16 +28,22 @@
             font-family: 'Montserrat Medium';
             font-style: normal;
             font-weight: normal;
-            src: local('Montserrat'), url('assets/font/Montserrat-Medium.ttf');
+            src: url('assets/font/Montserrat-Medium.ttf');
         }
 
         @font-face {
             font-family: 'Montserrat Bold';
             font-style: normal;
             font-weight: normal;
-            src: local('Montserrat'), url('assets/font/Montserrat-Bold.ttf');
+            src: url('assets/font/Montserrat-Bold.ttf');
         }
 
+        @font-face {
+            font-family: 'Montserrat ExtraBold';
+            font-style: normal;
+            font-weight: normal;
+            src: url('assets/font/Montserrat-ExtraBold.ttf');
+        }
         body {
             background-color: #FFF9E1;
         }
