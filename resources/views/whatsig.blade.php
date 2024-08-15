@@ -126,15 +126,12 @@
         {{--Whats IG Text--}}
         <div class="col-12 col-sm-10 col-md-8">
             <div class="whatsig-text" style="background-color: #FCF1CF">
-                <p>Industrial Games adalah kompetisi dalam bidang Teknik Industri yang diadakan Program Studi Teknik
-                    Industri Universitas Surabaya untuk siswa-i SMA/SMK/Sederajat di seluruh Indonesia. Industrial
-                    Games dikemas dalam bentuk games di mana peserta dapat bermain sambil belajar dalam merancang,
-                    mengatur, dan mengaplikasikan sistem industri yang memuat manusia, mesin, material, lingkungan,
-                    dan manajemen. Sebagai lomba terbesar dan tertua yang sudah berjalan selama 30 tahun di
-                    Indonesia, Industrial Games mengenalkan industri manufaktur, industri jasa, dan industri digital
-                    yang sekarang sudah diterapkan di seluruh dunia. Tidak hanya itu, Industrial Games memberikan
-                    kesempatan kepada peserta dalam menambah pengalaman, relasi, dan pengetahuan lebih dalam terkait
-                    Teknik Industri.</p>
+                <p>Industrial Games (IG) adalah acara tahunan berskala nasional yang diselenggarakan oleh Teknik
+                    Industri Universitas Surabaya dan di tahun 2024 ini adalah pelaksanaan Industrial Games yang ke-32.
+                    Industrial Games ke-32 mengusung tema Innovation in Escalating City Heritage Tourism. Tema ini
+                    menyoroti pentingnya inovasi dalam pariwisata warisan kota yang semakin meningkat. Inovasi dianggap
+                    sebagai kunci untuk mengembangkan dan mempromosikan situs-situs warisan yang tidak hanya menarik
+                    bagi wisatawan, tetapi juga berkontribusi pada keberlanjutan dan revitalisasi kota.</p>
             </div>
         </div>
     </div>
@@ -153,24 +150,27 @@
                 <ul>
                     <li>Tabungan Rp6.000.000</li>
                     <li>Piala Bergilir Gubernur Jawa Timur</li>
-                    <li>100% USP dan UPP Semester 1 (jika masuk Teknik Industri UBAYA)</li>
-                    <li>Piala Tetap Rektor Ubaya</li>
+                    <li>Piala Tetap Rektor Universitas Surabaya</li>
+                    <li>Pembebesan 100% Uang Sumbangan Pendidikan dan Uang Penyelenggara Pendidikan (Semester 1) (jika masuk Teknik Industri UBAYA)</li>
+                    <li>Sertifikat</li>
                 </ul>
             </div>
-            <div class="juara 2 mt-5">
+            <div class="juara 2">
                 <h3>JUARA 2</h3>
                 <ul>
                     <li>Tabungan Rp4.000.000</li>
-                    <li>75% USP dan UPP Semester 1 (jika masuk Teknik Industri UBAYA)</li>
-                    <li>Piala Tetap Rektor Ubaya</li>
+                    <li>Piala Tetap Rektor Universitas Surabaya</li>
+                    <li>Pembebesan 75% Uang Sumbangan Pendidikan dan Uang Penyelenggara Pendidikan (Semester 1) (jika masuk Teknik Industri UBAYA)</li>
+                    <li>Sertifikat</li>
                 </ul>
             </div>
-            <div class="juara 3 mt-5">
+            <div class="juara 3 mb-5">
                 <h3>JUARA 3</h3>
                 <ul>
                     <li>Tabungan Rp2.500.000</li>
-                    <li>50% USP dan UPP Semester 1 (jika masuk Teknik Industri UBAYA)</li>
-                    <li>Piala Tetap Rektor Ubaya</li>
+                    <li>Piala Tetap Rektor Universitas Surabaya</li>
+                    <li>Pembebesan 50% Uang Sumbangan Pendidikan dan Uang Penyelenggara Pendidikan (Semester 1) (jika masuk Teknik Industri UBAYA)</li>
+                    <li>Sertifikat</li>
                 </ul>
             </div>
         </div>
