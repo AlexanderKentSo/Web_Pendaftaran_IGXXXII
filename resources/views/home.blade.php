@@ -36,6 +36,7 @@
 
         .fix-image:hover {
             -webkit-transform: scale(1.05);
+            z-index: 1;
         }
 
         .text-red {
@@ -257,13 +258,11 @@
                                 style="max-height: 700px;"></div> --}}
                         </div>
                         {{-- Desktop view --}}
-                        <div class="col-12 col-lg-5 mt-5 d-none d-md-block pb-5">
+                        <div class="col-12 col-lg-5 mt-5 d-none d-md-block pb-5" style="padding:20px;">
                             <h2 class="text-black">PENDAFTARAN BATCH 1<br>SUDAH DIBUKA !</h2>
-                            <h6 class= "text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum
-                                nemo a repudiandae et magni doloremque error laborum tempora nobis?</h6>
-                            <div class = "d-flex justify-content-center justify-content-lg-start">
+                            <div class = "d-flex justify-content-center justify-content-lg-start" style="margin:50px 0 20px 0;">
                                 <button class="button-regis my-2" role="button"
-                                    onclick="location.href='{{ route('register') }}'">REGISTER NOW</button>
+                                    onclick="location.href='https://bit.ly/PendaftaranIGXXX112024'">REGISTER NOW</button>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 d-flex justify-content-end align-items-end d-none d-md-flex">
@@ -277,12 +276,9 @@
                         <div class = "d-md-none">
                             <div class="col-12 col-lg-5 mt-5">
                                 <h2 class="text-black mx-5">PENDAFTARAN BATCH 1 SUDAH DIBUKA !</h2>
-                                <h6 class= "text-black mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Placeat eum
-                                    nemo a repudiandae et magni doloremque error laborum tempora nobis?</h6>
-                                <div class = "d-flex justify-content-center justify-content-lg-start">
+                                <div class = "d-flex justify-content-center justify-content-lg-start" style="margin:50px 0;">
                                     <button class="button-regis my-2" role="button"
-                                        onclick="location.href='{{ route('register') }}'">REGISTER NOW</button>
+                                        onclick="location.href='https://bit.ly/PendaftaranIGXXX112024'">REGISTER NOW</button>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 d-flex justify-content-end align-items-end">

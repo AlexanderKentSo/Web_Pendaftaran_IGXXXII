@@ -49,8 +49,8 @@
         }
 
         .footer-container {
-            color: #fff;
-            background-color: #2c56a7;
+            color: #d2af3a;
+            background-color: #fff9e1;
         }
 
         .logo-footer {
@@ -63,7 +63,7 @@
         .nav-link,
         .nav-link:focus {
             font-family: 'Montserrat Bold';
-            font-size: 18px;
+            font-size: 15px;
             color: #ffffff;
         }
 
@@ -108,6 +108,7 @@
             background-color: #e3ab4b; 
             width:100%;
             top:0;
+            z-index: 99;
         }
 
         #hamburger-menu{
@@ -115,13 +116,29 @@
         }
 
         .navbar-extra{
-            visibility: hidden;
+            display: none;
+        }
+
+        .menu{
+            margin-bottom: 25px;
+        }
+
+        .menu a{
+            text-decoration: none;
+            font-family: 'Montserrat light';
+            color: #D2AF3A;
+            margin: 10px 0 10px 0;
+        }
+
+        .event-logo{
+            height: 150px;
         }
 
         /* Sidebar hidden by default */
         .sidebar {
             background-color: #ffe2b4;
             padding-top: 10px; /* Adjust padding as necessary */
+            display: none;
         }
 
         /* Links inside the sidebar */
@@ -140,9 +157,14 @@
         }
 
         /* Media query to hide navbar items and show the hamburger menu */
-        @media (max-width: 900px) {
+        @media (max-width: 1050px) {
             html {
-                font-size: 80%;
+                font-size: 70%;
+            }
+
+            .nav-link,
+            .nav-link:focus {
+                display: none;
             }
 
             .navbar {
@@ -200,7 +222,7 @@
             </div>
 
             {{-- Buttons --}}
-            <a class="btn btn-outline d-none d-lg-flex" id="navRegister" href="{{ route('register') }}">REGISTER NOW</a>
+            <a class="btn btn-outline d-none d-lg-flex" id="navRegister" href="https://bit.ly/PendaftaranIGXXX112024">REGISTER NOW</a>
 
             {{-- Hamburger Menu --}}
             <a href="#" id="hamburger-menu" class="d-lg-none">
@@ -209,7 +231,7 @@
         </div>
     </nav>
 
-    {{-- Sidebar --}}
+    {{-- Alt NavBar --}}
     <div id="sidebar" class="sidebar d-none">
         <a class="nav-link active" aria-current="page" href="{{ route('home') }}">HOME</a>
         <a class="nav-link active" aria-current="page" href="{{ route('whatsig') }}">WHAT'S IG31?</a>
@@ -233,115 +255,41 @@
                 <h4>EVENT BY:</h4>
                 <div class="row">
                     {{-- Logo Ubaya --}}
-                    <div class="col-12 d-flex flex-wrap align-items-center">
-                        <img class="logo-footer mt-3" src="{{ asset('assets') }}/logo/Logo_Ubaya.png"
-                            style="max-height: 150px; margin-left:-20px">
+                    <div class="col-12 d-flex flex-wrap align-items-center event-logo">
+                        <img class="logo-footer mt-3" src="{{ asset('assets') }}/logo/Logo_Ubaya.png">
                     </div>
                     {{-- Logo KSM TI --}}
-                    <div class="col-3 d-flex flex-wrap align-items-center">
-                        <img class="logo-footer my-3 me-3" src="{{ asset('assets') }}/logo/Logo_TI.png"
-                            style="max-height: 100px;">
+                    <div class="col-3 d-flex flex-wrap align-items-center event-logo">
+                        <img class="logo-footer my-3 me-3" src="{{ asset('assets') }}/logo/Logo_TI.png">
                     </div>
                     {{-- Logo IG --}}
-                    <div class="col-7 d-flex flex-wrap align-items-center">
-                        <img class="logo-footer my-3 me-3" src="{{ asset('assets') }}/logo/IG_Logo.png"
-                            style="max-height: 60px;">
+                    <div class="col-7 d-flex flex-wrap align-items-center event-logo">
+                        <img class="logo-footer my-3 me-3" src="{{ asset('assets') }}/logo/IG_Logo.png">
                     </div>
                 </div>
             </div>
 
             {{-- Menus --}}
-            <div class="col-md-4">
+            <div class="col-md-4 menu">
                 <h4>MENUS</h4>
-                <div class="row mt-3">
-                    <div class="col-lg-6 col-sm-8 my-4">
-                        <ul class="pages d-flex justify-content-between">
-                            <li>
-                                <a href="{{ url('/') }}">HOME</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 col-sm-8 my-4">
-                        <ul class="pages d-flex justify-content-between">
-                            <li class="me-5">
-                                <a href="{{ url('/announcement') }}">ANNOUNCEMENTS</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 col-sm-8 my-4">
-                        <ul class="pages d-flex justify-content-between">
-                            <li>
-                                <a href="{{ url('/whatsig') }}">WHAT'S IG31?</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 col-sm-8 my-4">
-                        <ul class="pages d-flex justify-content-between">
-                            <li class="me-5">
-                                <a href="{{ url('/gallery') }}">GALLERY</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 col-sm-8 my-4">
-                        <ul class="pages d-flex justify-content-between">
-                            <li class="me-5">
-                                <a href="{{ url('/faq') }}">FAQ</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="row mt-3 d-flex">
+                    <a href="{{ url('/') }}">HOME</a>
+                    <a href="{{ url('/announcement') }}">ANNOUNCEMENTS</a>
+                    <a href="{{ url('/whatsig') }}">WHAT'S IG31?</a>
+                    <a href="{{ url('/gallery') }}">GALLERY</a>
+                    <a href="{{ url('/faq') }}">FAQ</a>
                 </div>
             </div>
 
-            {{-- Recent Post --}}
+            {{-- Social Media --}}
             <div class="col-md-4">
-                <h4>RECENT POST</h4> 
-                <div class="row mt-3"> 
-                    {{-- Gambar Maskot --}}
-                    <div class="col-4 d-flex justify-content-center align-items-center">
-                        <img class="logo-footer my-3 me-3" src="{{ asset('assets') }}/img/Footer_Maskot.png"
-                            style="max-height: 120px;">
-                    </div> 
-                    {{-- Pengumuman --}}
-                    <div class="col-8 d-flex flex-wrap justify-content-start align-items-center">
-                        <h3>Industrial Games</h3>
-                        <p>Industrial Games is a competition held by Industrial Engineering of University of Surabaya.</p>
-
-                        <p><i>01 July 2023 <span style="color:#D3D3D3; font-weight:100">23:59 PM</span></i></p>
-                    </div> 
-                </div> 
-
-                {{-- Social Media --}}
                 <h4 class="">SOCIAL MEDIA</h4>
                 <div class="row mt-3 d-flex justify-content-beetween align-items-center sosmed-row">
-                    {{-- Email --}}
-                    <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
-                        <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
-                                href="mailto: industrialgames.ubaya@gmail.com"><img class="sosmed"
-                                    src="{{ asset('assets/icon/gmail.png') }}" alt=""></a></div>
-                    </div>
-                    {{-- Twitter --}}
-                    <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
-                        <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
-                                href="https://twitter.com/ig_ubaya"><img class="sosmed"
-                                    src="{{ asset('assets/icon/twitter.png') }}" alt=""></a></div>
-                    </div>
-                    {{-- Facebook --}}
-                    <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
-                        <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
-                                href="https://www.facebook.com/igubaya"><img class="sosmed"
-                                    src="{{ asset('assets/icon/facebook.png') }}" alt=""></a></div>
-                    </div>
                     {{-- Instagram --}}
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
                         <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
                                 href="https://www.instagram.com/ig_ubaya"><img class="sosmed"
                                     src="{{ asset('assets/icon/instagram.png') }}" alt=""></a></div>
-                    </div>
-                    {{-- Line --}}
-                    <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
-                        <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
-                                href="https://line.me/ti/p/@257saktt"><img class="sosmed"
-                                    src="{{ asset('assets/icon/line.png') }}" alt=""></a></div>
                     </div>
                     {{-- Tiktok --}}
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
@@ -349,13 +297,25 @@
                                 href="https://www.tiktok.com/@ig_ubaya"><img class="sosmed"
                                     src="{{ asset('assets/icon/tiktok.png') }}" alt=""></a></div>
                     </div>
-                </div>
+                    {{-- youtube --}}
+                    <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
+                        <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
+                                href="https://www.youtube.com/@IndustrialGamesUBAYA"><img class="sosmed"
+                                    src="{{ asset('assets/icon/youtube.png') }}" alt=""></a></div>
+                    </div>
+                    {{-- Facebook --}}
+                    <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
+                        <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
+                                href="https://www.facebook.com/igubaya"><img class="sosmed"
+                                    src="{{ asset('assets/icon/facebook.png') }}" alt=""></a></div>
+                    </div></div>
             </div>
 
+            
+            {{-- Garis Pembatas --}}
             <div class="row d-flex justify-content-center">
-                {{-- Garis Pembatas --}}
                 <div class="col-12 my-2 d-flex justify-content-center">
-                    <div style="background-color: #FFFFF7; height:2.5px; width:100%"></div>
+                    <div style="background-color: #CB553B; height:2.5px; width:100%"></div>
                     <br>
                 </div>
             </div>
