@@ -109,11 +109,6 @@
             touch-action: manipulation;
         }
 
-        /* .button-regis:hover {
-                                                                                                                                                    background-color: white;
-                                                                                                                                                    color: black;
-                                                                                                                                                } */
-
         .spacer-2 {
             margin-right: -30px;
             margin-left: -30px;
@@ -305,5 +300,4 @@
             </div>
         </div>
     </div>
-    <div class = "mt-5 mb-5" style="background-color: #CB553B; height:9px; width:100%"></div>
 @endsection

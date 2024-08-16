@@ -134,6 +134,18 @@
             height: 150px;
         }
 
+        /* Garis */
+        .garis {
+            height: 9px;
+            background-color: #CB553B;
+        }
+
+        /* Sponsor */
+        .sponsor-list div.sponsor {
+            border: 1px solid #D2AF3A;
+            height: 150px;
+        }
+
         /* Sidebar hidden by default */
         .sidebar {
             background-color: #ffe2b4;
@@ -248,8 +260,25 @@
     </div>
 
     {{-- Footer --}}
+    <div class="garis w-100"></div>
     <div class="footer-container px-5 pt-5 pb-4">
         <footer class="row d-flex flex-wrap justify-content-between my-2">
+            
+            {{-- Sponsor --}}
+            <div class="sponsor-section mt-5 mx-2 mx-md-5 px-0 px-md-5 ">
+                <div class="text-center py-md-5">
+                    <h2 class="fw-bold" style="color: #D2AF3A">Sponsored by:</h2>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 sponsor-list">
+                    @for($i=1; $i <=8; $i++)
+                    <div class="col pb-5 px-0 px-md-5">
+                        <div class="sponsor"></div>
+                    </div>
+                    @endfor
+                </div>
+            </div>
+            {{-- Sponsor --}}
+
             {{-- Event By --}}
             <div class="col-md-4">
                 <h4>EVENT BY:</h4>
