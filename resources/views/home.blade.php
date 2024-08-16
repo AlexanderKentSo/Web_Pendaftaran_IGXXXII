@@ -4,6 +4,16 @@
 
 @section('css')
     <style>
+        @import url('https://fonts.cdnfonts.com/css/antique-stories');
+        @import url(https://db.onlinewebfonts.com/c/51365148ec9981c18941b8596e6f88f5?family=Pragmatica+Medium);
+
+        .text-main{
+            font-family: "ANTIQUE STORIES", sans-serif;
+        }
+        .text-secondary{
+            font-family:"Pragmatica Medium", sans-serif;
+        }
+
         body {
             background: url("/assets/img/Home/Group.png") no-repeat;
             -webkit-background-size: cover;
@@ -195,27 +205,27 @@
     <div class="container">
         {{-- Logo IG --}}
         <div class="row my-5">
-            <div class="col-12 mt-3 d-flex flex-wrap justify-content-center">
-                <img class="fix-image headline" src="{{ asset('assets') }}/logo/Logo_IG32.png" style="max-height: 600px;">
+            <div class="col-12 mt-5 d-flex flex-wrap justify-content-center">
+                <img class="fix-image headline mt-4" src="{{ asset('assets') }}/logo/Logo_IG32.png" style="max-height: 600px;">
             </div>
         </div>
         {{-- End Of Logo IG --}}
-        <div class="row-full">
+        <div class="row-full text-secondary">
 
             {{-- Prize dan Maskot --}}
             <div class="row my-10 mx-0" style="background: #d09962; border-radius: 30px;">
                 <div class="col-xl-7 col-sm-12 my-4 d-flex flex-column justify-content-start">
                     <div class="d-flex align-items-center">
                         <h3 class="ms-5 text-black">Win a total of</h3>
-                        <div class="d-lg-flex d-none mx-3 mb-2" style="background-color: black; height: 5px; width: 25%;">
+                        <div class=" mx-3 mb-2" style="background-color: black; height: 5px; width: 25%;">
                         </div>
                     </div>
-                    <h2 class="mx-5 text-black">IDR 0000 MILLION</h2>
+                    <h2 class="mx-5 text-black" style = "font-size:40px;">IDR 0000 MILLION</h2>
                     <h3 class="mx-5 text-black">Worth of prizes</h3>
                     <div class="mx-5 mt-auto">
                         <h4 style="color:#fff;">*REGISTER YOUR TEAM NOW AND</h4>
                         <div class = "d-flex flex-wrap">
-                            <h4>BE A PART OF &nbsp;</h4>
+                            <h4 style = "color:#fff;">BE A PART OF &nbsp;</h4>
                             <h4 class = "ml-1"style="color:#CB553B;">INDUSTRIAL GAMES 2024!!!</h4>
                         </div>
                     </div>
@@ -259,7 +269,7 @@
                         {{-- Desktop view --}}
                         <div class="col-12 col-lg-5 mt-5 d-none d-md-block pb-5">
                             <h2 class="text-black">PENDAFTARAN BATCH 1<br>SUDAH DIBUKA !</h2>
-                            <h6 class= "text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum
+                            <h6 style = "color:black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum
                                 nemo a repudiandae et magni doloremque error laborum tempora nobis?</h6>
                             <div class = "d-flex justify-content-center justify-content-lg-start">
                                 <button class="button-regis my-2" role="button"
@@ -267,7 +277,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 d-flex justify-content-end align-items-end d-none d-md-flex">
-                            <img class="img-fluid fix-image mt-5 mb-3"
+                            <img class="fix-image mt-5 mb-3"
                                 src="{{ asset('assets') }}/img/Home/Emote marah 1.png" alt=""
                                 style = "max-height: 200px;opacity: 0.5;">
                         </div>
@@ -286,7 +296,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4 d-flex justify-content-end align-items-end">
-                                <img class="img-fluid mt-5 mb-3" src="{{ asset('assets') }}/img/Home/Emote marah 1.png"
+                                <img class="fix-image mt-5 mb-3" src="{{ asset('assets') }}/img/Home/Emote marah 1.png"
                                     alt="" style = "max-height: 200px;opacity: 0.5;">
                             </div>
                         </div>
@@ -299,5 +309,5 @@
             </div>
         </div>
     </div>
-    <div class = "mt-5 mb-5" style="background-color: #CB553B; height:5px; width:100%"></div>
+    <div class = "mt-5 mb-5" style="background-color: #CB553B; height:9px; width:100%"></div>
 @endsection
