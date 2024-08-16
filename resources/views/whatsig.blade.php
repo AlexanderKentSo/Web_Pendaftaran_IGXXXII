@@ -88,6 +88,9 @@
             padding-left: 10% !important;
         }
     }
+    .nav-link::after{
+        
+    }
 
     /* Garis */
     .garis {
@@ -168,5 +171,4 @@
         </div>
     </div>
 </div>
-<div class="garis w-100"></div>
 @endsection
