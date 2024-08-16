@@ -29,9 +29,9 @@
         .monst-light {
             font-family: var(--montserrat-light);
         }
+
         .gallery-section {
             position: relative;
-            background-image: url("/assets/img/Images_Gallery/img1.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             height: 70vh;
@@ -43,6 +43,10 @@
             justify-content: center;
             align-items: center; 
             z-index: -2;
+
+            /* Smooth transition effect */
+            transition: background-image 2s ease-in-out, opacity 2s ease-in-out;
+            opacity: 1;
         }
 
         .overlay {
@@ -51,7 +55,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent white */
+            background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
             z-index: 1;
         }
 
@@ -81,4 +85,47 @@
         <div class="overlay"></div>
         <div class="gallery-title"></div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = [
+                '/assets/img/Images_Gallery/img1.jpg',
+                '/assets/img/Images_Gallery/img2.jpg',
+                '/assets/img/Images_Gallery/img3.jpg',
+                '/assets/img/Images_Gallery/img4.jpg',
+                '/assets/img/Images_Gallery/img5.jpg',
+                '/assets/img/Images_Gallery/img6.jpg',
+                '/assets/img/Images_Gallery/img7.jpg',
+                '/assets/img/Images_Gallery/img8.jpg',
+                '/assets/img/Images_Gallery/img9.jpg',
+            ];
+
+            let currentIndex = 0;
+            const gallerySection = document.querySelector('.gallery-section');
+
+            function changeBackgroundImage() {
+                setTimeout(function () {
+                    if(currentIndex > 8){
+                        currentIndex = 0;
+                        gallerySection.style.backgroundImage = `url(${images[currentIndex]})`;
+                    }else{
+                    currentIndex = (currentIndex + 1) % images.length;
+                    gallerySection.style.backgroundImage = `url(${images[currentIndex]})`;
+                }
+                }, 0); // Wait for 1 second to complete the fade out before changing the image
+                
+            }
+
+            // Initial call to set the first background image
+            changeBackgroundImage();
+
+            // Change the background image every 5 seconds (5000 milliseconds)
+            setInterval(changeBackgroundImage, 5000);
+        });
+    </script>
+@endsection
+
+@section('js')
+    <script>
+        
+    </script>
 @endsection
