@@ -1,117 +1,84 @@
 @extends('layouts.app')
 
-@section('title', 'Gallery')
+@section("title", "FAQ")
 
-@section('content')
+@section("css")
     <style>
-        @media (max-width: 991.98px){
-            .img-gallery{
-                width: 30%;
-            }
+        :root{
+            --c1: #CB553B;
+            --c2: rgba(228, 173, 173, 0.35);
+            --c3: rgba(208, 153, 98, 70);
+            --c4: rgba(201, 65, 44, 0.85);
+            --montserrat-light : 'Montserrat Light';
+            --montserrat-medium : 'Montserrat Medium';
+            --montserrat-bold : 'Montserrat Bold';
         }
 
-        body {
-            background: url('{{ asset('assets') }}/background/Background Gallery.png') top / cover no-repeat;
-            background-attachment: fixed;
+        p {
+            margin: 0;
         }
 
-        @font-face {
-            font-family: 'Morton Bold';
-            font-style: normal;
-            font-weight: normal;
-            src: local('Morton Bold'), url('assets/font/Morton-Bold.otf');
+        .monst-bold {
+            font-family: var(--montserrat-bold);
         }
-
-        .indicator {
-            border-radius: 50%;
-            height: 25px;
-            width: 25px;
+        
+        .monst-medium {
+            font-family: var(--montserrat-medium);
         }
-
-        .spacing-bawah {
-            height: 50px;
+        
+        .monst-light {
+            font-family: var(--montserrat-light);
         }
-
-        .container-img {
+        .gallery-section {
             position: relative;
+            background-image: url("/assets/img/Images_Gallery/img1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 70vh;
+            width: 100vw;
+            box-sizing: border-box;
+            margin-top: 80px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            z-index: -2;
         }
 
-        .img-gallery {
+        .overlay {
             position: absolute;
-            bottom: 0;
-            z-index: 0;
-            transform: translateX(10%);
-            transform: translateY(50%);
-            right: 0;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent white */
+            z-index: 1;
+        }
+
+        .gallery-title {
+            z-index: 2;
+            background-image: url('/assets/logo/logo_gallery.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 20vh;
+            width: 100vw;
+        }
+
+        .gallery-subtitle {
+            font-family: var(--montserrat-medium);
+            font-size: 2rem;
+            color: #f0cd8a;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            margin-top: -20px;
         }
     </style>
+@endsection
 
-    <div id="carouselIndicator" class="carousel slide mb-5" data-bs-ride="true">
-        {{-- Element --}}
-        {{-- <img  src="{{ asset('assets/img/Gallery_Element.png') }}" alt="Element Gallery" style="position: absolute;
-    z-index:1; width: 400px;">
-    <h1 style="font-family: 'Morton Bold'; position: absolute; z-index: 2; color: #ffff;
-    margin-top: 30px; margin-left: 90px;">GALERI</h1> --}}
-
-        {{-- Indikator Galeri --}}
-        <div class="carousel-indicators">
-            @for ($i = 0; $i < 9; $i++)
-                @if ($i == 0)
-                    <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="{{ $i }}"
-                        class="active" aria-current="true" aria-label="Slide {{ $i + 1 }}"
-                        style="background-color: #2C56A7"></button>
-                @else
-                    <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="{{ $i }}"
-                        aria-label="Slide {{ $i + 1 }}" style="background-color: #2C56A7"></button>
-                @endif
-            @endfor
-        </div>
-
-        {{-- Foto Galeri --}}
-        <div class="carousel-inner">
-            @for ($i = 0; $i < 9; $i++)
-                @if ($i == 0)
-                    <div class="carousel-item active">
-                        <div class="container-img">
-                            <img src="{{ asset('assets/img/Images_Gallery/img' . ($i + 1) . '.jpg') }}"
-                                class="d-block w-100" alt="image {{ $i + 1 }}">
-                        </div>
-
-                    </div>
-                @else
-                    <div class="carousel-item">
-                        <div class="container-img">
-                            <img src="{{ asset('assets/img/Images_Gallery/img' . ($i + 1) . '.jpg') }}"
-                                class="d-block w-100" alt="image {{ $i + 1 }}.JPG">
-                        </div>
-                    </div>
-                @endif
-            @endfor
-        </div>
-
-        {{-- Tombol Next & Prev --}}
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicator" data-bs-slide="prev">
-            <img src="{{ asset('assets/img/Prev_Gallery.png') }}" alt="Prev" style="width: 20px;">
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicator" data-bs-slide="next">
-            <img src="{{ asset('assets/img/Next_Gallery.png') }}" alt="Next" style="width: 20px;">
-            <span class="visually-hidden">Next</span>
-        </button>
+@section('content')
+    <div class="gallery-section">
+        <div class="overlay"></div>
+        <div class="gallery-title"></div>
     </div>
-
-     {{-- Papan Gallery --}}
-     <div class="container-img">
-        <img class="img-gallery" src="{{ asset('assets') }}/img/Gallery Board.png" />
-    </div>
-
-    {{-- Sponsor --}}
-    {{-- <div class="row mx-4">
-        <div class="col">
-            @include('layouts.sponsor')
-        </div>
-    </div> --}}
-
-    {{-- Alternatif klo misal nanti ternyata perlu mbalikno sponsor ke kode awal masukin di bawahnya line 109 --}}
-    {{-- <div class="row spacing-bawah"></div> --}}
 @endsection
