@@ -202,7 +202,7 @@
         {{-- Logo IG --}}
         <div class="row my-5">
             <div class="col-12 mt-5 d-flex flex-wrap justify-content-center">
-                <img class="fix-image headline mt-4" src="{{ asset('assets') }}/logo/Logo_IG32.png" style="max-height: 600px;">
+                <img class="fix-image headline mt-4" src="{{ asset('assets') }}/logo/Logo_IG32.png" style="max-height: 600px;" draggable="false">
             </div>
         </div>
         {{-- End Of Logo IG --}}
@@ -216,7 +216,7 @@
                         <div class=" mx-3 mb-2" style="background-color: black; height: 5px; width: 25%;">
                         </div>
                     </div>
-                    <h2 class="mx-5 text-black" style = "font-size:40px;">IDR 0000 MILLION</h2>
+                    <h2 class="mx-5 text-black" style = "font-size:40px;">IDR 100 MILLION ++</h2>
                     <h3 class="mx-5 text-black">Worth of prizes</h3>
                     <div class="mx-5 mt-auto">
                         <h4 style="color:#fff;">*REGISTER YOUR TEAM NOW AND</h4>
@@ -228,7 +228,7 @@
                 </div>
                 <div class="col-xl-5 col-sm-12 d-flex justify-content-end align-items-end p-0">
                     <img class="fix-image maskot" src="{{ asset('assets') }}/img/Home/Maskot happy 1.png"
-                        style="max-height: 400px; width: auto;">
+                        style="max-height: 400px; width: auto;" draggable="false">
                 </div>
             </div>
 
@@ -239,7 +239,7 @@
             <div class="col mt-5">
                 <div class="row d-flex flex-wrap">
                     <div class="col-8">
-                        <img class = "img-fluid" src="{{ asset('assets') }}/img/Home/map timeline.png" alt="">
+                        <img class = "img-fluid" src="{{ asset('assets') }}/img/Home/map timeline.svg" alt="" draggable="false">
                     </div>
                     <div class="col-4 d-flex flex-column justify-content-start align-items-end mb-3">
                         {{--    <div style="background-color: black; height:2.5px; width:50%"></div> --}}
@@ -255,25 +255,26 @@
                     </div>
                     <div class="row-12 d-flex flex-wrap p-0"
                         style = "background-color:#f0d193;border-radius:20px 20px 0px 0px;">
-                        <div class="col-12 col-lg-3 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
-                            <div style = "background-color:black;height:200px;">
-                                <p style="color:white;">Placeholder Poster</p>
+                        <div class="col-12 col-md-3 col-lg-3 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
+                            <div class="col-xl-5 col-sm-12 d-flex justify-content-end align-items-end p-0">
+                                <img class="fix-image maskot" src="{{ asset('assets') }}/img/Home/Maskot happy 1.png"
+                                    style="max-height: 400px; width: auto;" draggable="false">
                             </div>
                             {{--     <div><img class="fix-image poster" src="{{ asset('assets') }}/img/Poster.png"
                                 style="max-height: 700px;"></div> --}}
                         </div>
                         {{-- Desktop view --}}
-                        <div class="col-12 col-lg-5 mt-5 d-none d-md-block pb-5" style="padding:20px;">
+                        <div class="col-12 col-md-5 col-lg-5 mt-5 d-none d-md-block pb-5" style="padding:20px;">
                             <h2 class="text-black">PENDAFTARAN BATCH 1<br>SUDAH DIBUKA !</h2>
                             <div class = "d-flex justify-content-center justify-content-lg-start" style="margin:50px 0 20px 0;">
                                 <button class="button-regis my-2" role="button"
                                     onclick="location.href='https://bit.ly/PendaftaranIGXXX112024'">REGISTER NOW</button>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 d-flex justify-content-end align-items-end d-none d-md-flex">
+                        <div class="col-12 col-md-5 col-lg-4 d-flex justify-content-end align-items-end d-none d-md-flex">
                             <img class="fix-image mt-5 mb-3"
                                 src="{{ asset('assets') }}/img/Home/Emote marah 1.png" alt=""
-                                style = "max-height: 200px;opacity: 0.5;">
+                                style = "max-height: 200px;opacity: 0.5;"  draggable="false">
                         </div>
 
 
@@ -288,7 +289,7 @@
                             </div>
                             <div class="col-12 col-lg-4 d-flex justify-content-end align-items-end">
                                 <img class="fix-image mt-5 mb-3" src="{{ asset('assets') }}/img/Home/Emote marah 1.png"
-                                    alt="" style = "max-height: 200px;opacity: 0.5;">
+                                    alt="" style = "max-height: 200px;opacity: 0.5;" draggable="false">
                             </div>
                         </div>
 

@@ -136,7 +136,7 @@
 
         /* Garis */
         .garis {
-            height: 9px;
+            height: 6px;
             background-color: #CB553B;
         }
 
@@ -221,7 +221,7 @@
         <div class="container-fluid d-flex align-items-center justify-content-between">
             {{-- Logo IG --}}
             <a class="navbar-brand" href="#" style="margin:0 50px;">
-                <img src="{{ asset('assets') }}/logo/Logo_IG32.png" alt="Logo IGXXXII" style="max-height: 75px">
+                <img src="{{ asset('assets') }}/logo/Logo_IG32.png" alt="Logo IGXXXII" style="max-height: 75px" draggable="false">
             </a>
 
             {{-- Menus --}}
@@ -244,7 +244,7 @@
     </nav>
 
     {{-- Alt NavBar --}}
-    <div id="sidebar" class="sidebar d-none">
+    <div id="sidebar" class="sidebar d-none" style="position:fixed;">
         <a class="nav-link active" aria-current="page" href="{{ route('home') }}">HOME</a>
         <a class="nav-link active" aria-current="page" href="{{ route('whatsig') }}">WHAT'S IG31?</a>
         <a class="nav-link active" aria-current="page" href="{{ route('announcement') }}">ANNOUNCEMENTS</a>
@@ -255,13 +255,13 @@
 
 
     {{-- Body --}}
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" style="margin-top: 80px;">
         @yield('content')
     </div>
 
-    {{-- Footer --}}
-    <div class="garis w-100"></div>
-    <div class="footer-container px-5 pt-5 pb-4">
+    {{-- Footer --}} 
+    <div class="garis w-100 mt-5"></div>
+    <div class="footer-container px-5 pb-4">
         <footer class="row d-flex flex-wrap justify-content-between my-2">
             
             {{-- Sponsor --}}
@@ -279,6 +279,7 @@
             </div>
             {{-- Sponsor --}}
 
+            <div class="garis w-100" style="margin:20px 0;"></div>
             {{-- Event By --}}
             <div class="col-md-4">
                 <h4>EVENT BY:</h4>
