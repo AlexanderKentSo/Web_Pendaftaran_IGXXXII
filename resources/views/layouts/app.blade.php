@@ -198,6 +198,7 @@
             #sidebar {
                 display: block; /* Show sidebar */
                 z-index: 99;
+                margin-top: 30px;
             }
 
             /* Ensure sidebar links are visible even with the .nav-link class */
