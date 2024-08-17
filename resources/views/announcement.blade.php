@@ -76,7 +76,7 @@
 @endsection
 
 @section('content')
-    <div class="d-flex mt-5">
+    <div class="d-flex mt-5" style="padding-top: 50px;">
         <div class="d-flex justify-content-center align-items-center flex-column pt-5 w-75">
             <div class="w-100 ps-5 pe-4">
                 <div class="wrap-all">

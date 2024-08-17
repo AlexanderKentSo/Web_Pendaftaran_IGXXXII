@@ -57,7 +57,7 @@
 @endsection
 
 @section('content')
-    <div class="d-flex">
+    <div class="d-flex" style="padding-top: 50px;">
         <div class="d-flex justify-content-center align-items-center flex-column pt-5 w-75">
             <div class="w-100 ps-5 pe-4">
                 <h1 class="monst-bold faq">FAQ</h1>

@@ -37,7 +37,7 @@
             height: 70vh;
             width: 100vw;
             box-sizing: border-box;
-            margin-top: 80px;
+            /* margin-top: 80px; */
             margin-bottom: 10px;
             display: flex;
             justify-content: center;
