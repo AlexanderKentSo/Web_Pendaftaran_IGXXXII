@@ -260,12 +260,12 @@
     </div>
 
     {{-- Footer --}} 
-    <div class="garis w-100 mt-5"></div>
+    {{-- <div class="garis w-100 mt-5"></div> --}}
     <div class="footer-container px-5 pb-4">
         <footer class="row d-flex flex-wrap justify-content-between my-2">
             
             {{-- Sponsor --}}
-            <div class="sponsor-section mt-5 mx-2 mx-md-5 px-0 px-md-5 ">
+            {{-- <div class="sponsor-section mt-5 mx-2 mx-md-5 px-0 px-md-5 ">
                 <div class="text-center py-md-5">
                     <h2 class="fw-bold" style="color: #D2AF3A">Sponsored by:</h2>
                 </div>
@@ -276,7 +276,7 @@
                     </div>
                     @endfor
                 </div>
-            </div>
+            </div> --}}
             {{-- Sponsor --}}
 
             <div class="garis w-100" style="margin:20px 0;"></div>

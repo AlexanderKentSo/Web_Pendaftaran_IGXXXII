@@ -256,12 +256,11 @@
                     <div class="row-12 d-flex flex-wrap p-0"
                         style = "background-color:#f0d193;border-radius:20px 20px 0px 0px;">
                         <div class="col-12 col-md-3 col-lg-3 mt-5 mt-lg-0 d-flex justify-content-center align-items-center">
-                            <div class="col-xl-5 col-sm-12 d-flex justify-content-end align-items-end p-0">
+                            {{-- <div class="col-xl-5 col-sm-12 d-flex justify-content-end align-items-end p-0">
                                 <img class="fix-image maskot" src="{{ asset('assets') }}/img/Home/Maskot happy 1.png"
-                                    style="max-height: 400px; width: auto;" draggable="false">
-                            </div>
-                            {{--     <div><img class="fix-image poster" src="{{ asset('assets') }}/img/Poster.png"
-                                style="max-height: 700px;"></div> --}}
+                                    style="max-height: 400px; width: auto;">
+                            </div> --}}
+                            <div><img class="fix-image poster" src="{{ asset('assets') }}/img/PosterIG32.png" style="max-height: 300px;" draggable="false"></div>
                         </div>
                         {{-- Desktop view --}}
                         <div class="col-12 col-md-5 col-lg-5 mt-5 d-none d-md-block pb-5" style="padding:20px;">

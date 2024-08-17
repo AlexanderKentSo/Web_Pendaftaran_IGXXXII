@@ -125,5 +125,5 @@
             <div class="box3 box h-100"></div>
         </div>
     </div>
-    <div class="garis w-100"></div>
+    {{-- <div class="garis w-100"></div> --}}
 @endsection
