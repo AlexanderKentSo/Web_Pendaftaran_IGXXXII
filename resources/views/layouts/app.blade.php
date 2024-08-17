@@ -197,6 +197,7 @@
             /* Show the sidebar when hamburger menu is clicked */
             #sidebar {
                 display: block; /* Show sidebar */
+                z-index: 99;
             }
 
             /* Ensure sidebar links are visible even with the .nav-link class */
@@ -263,7 +264,7 @@
 
 
     {{-- Body --}}
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" style="margin-top:80px;">
         @yield('content')
     </div>
 
