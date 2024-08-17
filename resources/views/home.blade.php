@@ -202,7 +202,7 @@
         {{-- Logo IG --}}
         <div class="row my-5">
             <div class="col-12 mt-5 d-flex flex-wrap justify-content-center">
-                <img class="fix-image headline mt-4" src="{{ asset('assets') }}/logo/Logo_IG32.png" style="max-height: 600px;" draggable="false">
+                <img class="fix-image headline mt-4" src="{{ asset('assets') }}/logo/logo_IG32.png" style="max-height: 600px;" draggable="false">
             </div>
         </div>
         {{-- End Of Logo IG --}}

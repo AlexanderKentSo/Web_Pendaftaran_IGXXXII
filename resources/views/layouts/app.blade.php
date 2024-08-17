@@ -229,7 +229,7 @@
         <div class="container-fluid d-flex align-items-center justify-content-between">
             {{-- Logo IG --}}
             <a class="navbar-brand" href="#" style="margin:0 50px;">
-                <img src="{{ asset('assets') }}/logo/Logo_IG32.png" alt="Logo IGXXXII" style="max-height: 75px" draggable="false">
+                <img src="{{ asset('assets') }}/logo/logo_IG32.png" alt="Logo IGXXXII" style="max-height: 75px" draggable="false">
             </a>
 
             {{-- Menus --}}
@@ -264,7 +264,7 @@
 
 
     {{-- Body --}}
-    <div class="container-fluid p-0" style="margin-top:80px;">
+    <div class="container-fluid p-0">
         @yield('content')
     </div>
 
@@ -328,13 +328,13 @@
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
                         <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
                                 href="https://www.instagram.com/ig_ubaya"><img class="sosmed"
-                                    src="{{ asset('assets') }}/icon/instagram.png" alt=""></a></div>
+                                    src="{{ asset('assets') }}/icon/Instagram.png" alt=""></a></div>
                     </div>
                     {{-- Tiktok --}}
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
                         <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
                                 href="https://www.tiktok.com/@ig_ubaya"><img class="sosmed"
-                                    src="{{ asset('assets') }}/icon/tiktok.png" alt=""></a></div>
+                                    src="{{ asset('assets') }}/icon/Tiktok.png" alt=""></a></div>
                     </div>
                     {{-- youtube --}}
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
@@ -346,7 +346,7 @@
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
                         <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
                                 href="https://www.facebook.com/igubaya"><img class="sosmed"
-                                    src="{{ asset('assets') }}/icon/facebook.png" alt=""></a></div>
+                                    src="{{ asset('assets') }}/icon/Facebook.png" alt=""></a></div>
                     </div></div>
             </div>
 
