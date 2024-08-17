@@ -240,7 +240,7 @@
             {{-- Menus --}}
             <div class="navbar d-flex align-items-center gap-3 d-none d-lg-flex">
                 <a class="nav-link active" aria-current="page" href="{{ route('home') }}">HOME</a>
-                <a class="nav-link active" aria-current="page" href="{{ route('whatsig') }}">WHAT'S IG31?</a>
+                <a class="nav-link active" aria-current="page" href="{{ route('whatsig') }}">WHAT'S IG32?</a>
                 <a class="nav-link active" aria-current="page" href="{{ route('announcement') }}">ANNOUNCEMENTS</a>
                 <a class="nav-link active" aria-current="page" href="{{ route('faq') }}">FAQ</a>
                 <a class="nav-link active" aria-current="page" href="{{ route('gallery') }}">GALLERY</a>
@@ -259,7 +259,7 @@
     {{-- Alt NavBar --}}
     <div id="sidebar" class="sidebar d-none" style="position:fixed;">
         <a href="{{ route('home') }}">HOME</a>
-        <a href="{{ route('whatsig') }}">WHAT'S IG31?</a>
+        <a href="{{ route('whatsig') }}">WHAT'S IG32?</a>
         <a href="{{ route('announcement') }}">ANNOUNCEMENTS</a>
         <a href="{{ route('faq') }}">FAQ</a>
         <a href="{{ route('gallery') }}">GALLERY</a>
@@ -319,7 +319,7 @@
                 <div class="row mt-3 d-flex">
                     <a href="{{ url('/') }}">HOME</a>
                     <a href="{{ url('/announcement') }}">ANNOUNCEMENTS</a>
-                    <a href="{{ url('/whatsig') }}">WHAT'S IG31?</a>
+                    <a href="{{ url('/whatsig') }}">WHAT'S IG32?</a>
                     <a href="{{ url('/gallery') }}">GALLERY</a>
                     <a href="{{ url('/faq') }}">FAQ</a>
                 </div>
