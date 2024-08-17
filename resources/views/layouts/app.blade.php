@@ -134,6 +134,10 @@
             height: 150px;
         }
 
+        .sosmed-container{
+            display: flex;
+        }
+
         /* Garis */
         .garis {
             height: 6px;
@@ -198,7 +202,7 @@
             #sidebar {
                 display: block; /* Show sidebar */
                 z-index: 99;
-                margin-top: 40px;
+                margin-top: 45px;
             }
 
             /* Ensure sidebar links are visible even with the .nav-link class */
@@ -327,28 +331,28 @@
                 <div class="row mt-3 d-flex justify-content-beetween align-items-center sosmed-row">
                     {{-- Instagram --}}
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
-                        <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
+                        <div class="sosmed-container p-3"><a target="_blank"
                                 href="https://www.instagram.com/ig_ubaya"><img class="sosmed"
                                     src="{{ asset('assets') }}/icon/Instagram.png" alt=""></a></div>
                     </div>
                     {{-- Tiktok --}}
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
-                        <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
+                        <div class="sosmed-container p-3"><a target="_blank"
                                 href="https://www.tiktok.com/@ig_ubaya"><img class="sosmed"
                                     src="{{ asset('assets') }}/icon/Tiktok.png" alt=""></a></div>
                     </div>
                     {{-- youtube --}}
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
-                        <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
+                        <div class="sosmed-container p-3"><a target="_blank"
                                 href="https://www.youtube.com/@IndustrialGamesUBAYA"><img class="sosmed"
                                     src="{{ asset('assets') }}/icon/youtube.png" alt=""></a></div>
                     </div>
                     {{-- Facebook --}}
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
-                        <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
+                        <div class="sosmed-container p-3"><a target="_blank"
                                 href="https://www.facebook.com/igubaya"><img class="sosmed"
                                     src="{{ asset('assets') }}/icon/Facebook.png" alt=""></a></div>
-                    </div></div>
+                    </div></div>              
             </div>
 
             
