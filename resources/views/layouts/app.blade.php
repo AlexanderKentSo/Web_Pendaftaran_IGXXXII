@@ -328,25 +328,25 @@
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
                         <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
                                 href="https://www.instagram.com/ig_ubaya"><img class="sosmed"
-                                    src="{{ asset('assets/icon/instagram.png') }}" alt=""></a></div>
+                                    src="{{ asset('assets') }}/icon/instagram.png" alt=""></a></div>
                     </div>
                     {{-- Tiktok --}}
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
                         <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
                                 href="https://www.tiktok.com/@ig_ubaya"><img class="sosmed"
-                                    src="{{ asset('assets/icon/tiktok.png') }}" alt=""></a></div>
+                                    src="{{ asset('assets') }}/icon/tiktok.png" alt=""></a></div>
                     </div>
                     {{-- youtube --}}
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
                         <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
                                 href="https://www.youtube.com/@IndustrialGamesUBAYA"><img class="sosmed"
-                                    src="{{ asset('assets/icon/youtube.png') }}" alt=""></a></div>
+                                    src="{{ asset('assets') }}/icon/youtube.png" alt=""></a></div>
                     </div>
                     {{-- Facebook --}}
                     <div class="col-lg-2 col-sm-4 d-flex justify-content-center align-items-center">
                         <div class="sosmed-container p-3"><a target="_blank" rel="noopener noreferrer"
                                 href="https://www.facebook.com/igubaya"><img class="sosmed"
-                                    src="{{ asset('assets/icon/facebook.png') }}" alt=""></a></div>
+                                    src="{{ asset('assets') }}/icon/facebook.png" alt=""></a></div>
                     </div></div>
             </div>
 
