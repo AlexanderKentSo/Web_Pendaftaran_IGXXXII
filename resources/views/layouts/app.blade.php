@@ -199,6 +199,13 @@
                 display: block; /* Show sidebar */
             }
 
+            /* Ensure sidebar links are visible even with the .nav-link class */
+            .sidebar a.nav-link {
+                display: block !important;
+                color: #76453B;
+            }
+
+
             .sidebar {
                 display: block; /* Make sidebar block when in mobile */
                 width: 100%; /* Full width of the screen */
@@ -245,17 +252,18 @@
 
     {{-- Alt NavBar --}}
     <div id="sidebar" class="sidebar d-none" style="position:fixed;">
-        <a class="nav-link active" aria-current="page" href="{{ route('home') }}">HOME</a>
-        <a class="nav-link active" aria-current="page" href="{{ route('whatsig') }}">WHAT'S IG31?</a>
-        <a class="nav-link active" aria-current="page" href="{{ route('announcement') }}">ANNOUNCEMENTS</a>
-        <a class="nav-link active" aria-current="page" href="{{ route('faq') }}">FAQ</a>
-        <a class="nav-link active" aria-current="page" href="{{ route('gallery') }}">GALLERY</a>
+        <a href="{{ route('home') }}">HOME</a>
+        <a href="{{ route('whatsig') }}">WHAT'S IG31?</a>
+        <a href="{{ route('announcement') }}">ANNOUNCEMENTS</a>
+        <a href="{{ route('faq') }}">FAQ</a>
+        <a href="{{ route('gallery') }}">GALLERY</a>
     </div>
+    
 
 
 
     {{-- Body --}}
-    <div class="container-fluid p-0" style="margin-top: 80px;">
+    <div class="container-fluid p-0">
         @yield('content')
     </div>
 
@@ -290,7 +298,7 @@
                     </div>
                     {{-- Logo KSM TI --}}
                     <div class="col-3 d-flex flex-wrap align-items-center event-logo">
-                        <img class="logo-footer my-3 me-3" src="{{ asset('assets') }}/logo/Logo_TI.png">
+                        <img class="logo-footer my-3 me-3" src="{{ asset('assets') }}/logo/Logo_TI.png" style="transform: scale(1.5); margin:20px 0 0 20px;">
                     </div>
                     {{-- Logo IG --}}
                     <div class="col-7 d-flex flex-wrap align-items-center event-logo">
