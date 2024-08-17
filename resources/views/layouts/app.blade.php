@@ -264,7 +264,7 @@
 
 
     {{-- Body --}}
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" style="margin-top:30px;">
         @yield('content')
     </div>
 

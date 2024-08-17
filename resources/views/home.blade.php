@@ -260,7 +260,7 @@
                                 <img class="fix-image maskot" src="{{ asset('assets') }}/img/Home/Maskot happy 1.png"
                                     style="max-height: 400px; width: auto;">
                             </div> --}}
-                            <div><img class="fix-image poster" src="{{ asset('assets') }}/img/PosterIG32.png" style="max-height: 300px;" draggable="false"></div>
+                            <div><img class="fix-image poster" src="{{ asset('assets') }}/img/posterIG32.png" style="max-height: 300px;" draggable="false"></div>
                         </div>
                         {{-- Desktop view --}}
                         <div class="col-12 col-md-5 col-lg-5 mt-5 d-none d-md-block pb-5" style="padding:20px;">
