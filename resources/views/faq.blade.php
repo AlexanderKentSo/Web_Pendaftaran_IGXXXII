@@ -72,7 +72,7 @@
                     <div class="mt-4">
                         <div class="box-pertanyaan-1 w-100"></div>
                         <div class="box-pertanyaan-1-isi pt-2 pb-3 mx-2 px-4">
-                            <h1 class="mb-1 monst-bold fs-5 ">Industrial Games XXXI diadakan secara apa?</h1>
+                            <h1 class="mb-1 monst-bold fs-5 ">Industrial Games XXXII diadakan secara apa?</h1>
                             <p class="monst-medium fs-6">Untuk pertama kalinya sejak pandemi, Industrial Games tahun ini akan diadakan secara FULL OFFLINE!</p>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                     <div class="mt-4">
                         <div class="box-pertanyaan-1 w-100"></div>
                         <div class="box-pertanyaan-1-isi pt-2 pb-3 mx-2 px-4">
-                            <h1 class="mb-1 monst-bold fs-5 ">Materi apa saja yang akan digunakan selama perlombaan Industrial Games XXXI?</h1>
+                            <h1 class="mb-1 monst-bold fs-5 ">Materi apa saja yang akan digunakan selama perlombaan Industrial Games XXXII?</h1>
                             <p class="monst-medium fs-6">Materi yang digunakan adalah pengetahuan umum, IPA SMA, dan seputar teknik industri.</p>
                         </div>
                     </div>
