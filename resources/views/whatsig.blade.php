@@ -146,7 +146,7 @@
                     <li>Tabungan Rp6.000.000</li>
                     <li>Piala Bergilir Gubernur Jawa Timur</li>
                     <li>Piala Tetap Rektor Universitas Surabaya</li>
-                    <li>Pembebesan 100% Uang Sumbangan Pendidikan dan Uang Penyelenggara Pendidikan (Semester 1) (jika masuk Teknik Industri UBAYA)</li>
+                    <li>Pembebasan 100% Uang Sumbangan Pendidikan dan Uang Penyelenggara Pendidikan (Semester 1) (jika masuk Teknik Industri UBAYA)</li>
                     <li>Sertifikat</li>
                 </ul>
             </div>
@@ -155,7 +155,7 @@
                 <ul>
                     <li>Tabungan Rp4.000.000</li>
                     <li>Piala Tetap Rektor Universitas Surabaya</li>
-                    <li>Pembebesan 75% Uang Sumbangan Pendidikan dan Uang Penyelenggara Pendidikan (Semester 1) (jika masuk Teknik Industri UBAYA)</li>
+                    <li>Pembebasan 75% Uang Sumbangan Pendidikan dan Uang Penyelenggara Pendidikan (Semester 1) (jika masuk Teknik Industri UBAYA)</li>
                     <li>Sertifikat</li>
                 </ul>
             </div>
@@ -164,7 +164,7 @@
                 <ul>
                     <li>Tabungan Rp2.500.000</li>
                     <li>Piala Tetap Rektor Universitas Surabaya</li>
-                    <li>Pembebesan 50% Uang Sumbangan Pendidikan dan Uang Penyelenggara Pendidikan (Semester 1) (jika masuk Teknik Industri UBAYA)</li>
+                    <li>Pembebasan 50% Uang Sumbangan Pendidikan dan Uang Penyelenggara Pendidikan (Semester 1) (jika masuk Teknik Industri UBAYA)</li>
                     <li>Sertifikat</li>
                 </ul>
             </div>
