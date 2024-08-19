@@ -87,7 +87,7 @@
                         <h6 class="card-subtitle mb-2" style="padding-bottom:10px;"> 21 September 2024 / Day 1 / 07.30-21.00 </h6>
                         <!----Annoucement Text---->
                         <p class="card-text">
-                            Setiap tim akan melwati babak penyisihan dimulai dari Tugu Pahlawan, Kota Lama & Universitas Surabaya bersama dengan KIKO the Red Panda.
+                            Setiap tim akan melewati babak penyisihan dimulai dari Tugu Pahlawan, Kota Lama & Universitas Surabaya bersama dengan KIKO the Red Panda.
                         </p>
                     </div>
                     <!----End Annoucement Text---->
@@ -99,7 +99,7 @@
                         <h6 class="card-subtitle mb-2" style="padding-bottom:10px;"> 22 September 2024 / Day 2 / 09.00 - 20.00 </h6>
                         <!----Annoucement Text---->
                         <p class="card-text">
-                            Bagi tim yang lolos babak penyisihan, akan melewati babak FINAL yang akan di laksanakan di Universitas Surabaya. Tetap semangat untuk setiap tim !
+                            Bagi tim yang lolos babak penyisihan, akan melewati babak FINAL yang akan dilaksanakan di Universitas Surabaya. Tetap semangat untuk setiap tim !
                         </p>
                     </div>
                     <!----End Annoucement Text---->
